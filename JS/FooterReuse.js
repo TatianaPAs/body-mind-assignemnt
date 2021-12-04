@@ -44,8 +44,7 @@
 
                 <div class="social-icons">
                     <a href="https://www.facebook.com/"> <img src="Images/Facebook.png" alt="Facebook icon" /></a>
-                    <a href="https://twitter.com/"><img src="Images/Twitter.png" alt="Twitter icon" /></a>
-                    <a href="https://www.instagram.com/?hl=en"> <img src="Images/Instagram.png" alt="Instagram icon" /></a>
+                   
                     <a href="https://www.youtube.com/"><img src="Images/YouTube.png" alt="YouTube icon" /></a>
                 </div>
             </div>
