@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--style for fonts from google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <script src="JS/JavaScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/subscription.js"></script>
+    <script src="JS/ReuseHeader.js"></script>
+    <script src="JS/FooterReuse.js"></script>
+
+    <title>Contact us page</title>
+</head>
+<body>
+    <div id="preloader"></div>
+
+    <main-header></main-header>
+
+    <!----Canvas -->
+
+    <section class="canvas-page" id="canvasDiv">
+        <canvas class="canvas1" id="canvas1"></canvas>
+    </section>
+
+    <section class="contact-page">
+        <div class="row contact">
+            <div class="contact-col">
+                <div class="address">
+                    <img src="Images/home.png" />
+                    <section>
+                        <h5> Manukau Station Road</h5>
+                        <p>Manukau City Centre, Auckland 2104</p>
+                        <p><i>On the first floor of the Manukau Institute of Technology building</i></p>
+                    </section>
+                </div>
+                <div class="address">
+                    <img src="Images/cell_phone.png" />
+                    <section>
+                        <h5> +64 022 123 123 </h5>
+                        <p>Monday to Saturday 8am-6pm</p>
+                        <p>Sunday 10am-4pm</p>
+                    </section>
+                </div>
+                <div class="address">
+                    <img src="Images/mail.png" />
+                    <section>
+                        <h5><a href=" mailto:info@body-mind.co.nz" style="color:black;"> info@body-mind.co.nz </a></h5>
+                        <p>send us email</p>
+                    </section>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form>
+                    <div class="row-form">
+                        <div class="input-group">
+                            <input type="text" name="First name" placeholder="First name" required />
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="Last name" placeholder="Last name" required />
+                        </div>
+                    </div>
+                    <input type="email" name="email" placeholder="Enter your email" required />
+                    <p> Please choose a category of your enquiry:</p>
+
+                    <div class="row-form radio">
+                        <div class="input-group">
+                            <input type="radio" id="question" name="question_type" value="Membership">
+                            <label for="Membership">Membership</label><br>
+                        </div>
+                        <div class="input-group">
+                            <input type="radio" id="question" name="question_type" value="Work">
+                            <label for="Work">Work</label><br>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="radio" id="question" name="question_type" value="Other" checked="checked">
+                            <label for="Other">Other</label><br>
+                        </div>
+                    </div>
+                    <br />
+
+
+                    <input type="text" name="subject" placeholder="Enter your subject" required />
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="explore-btn yellow-btn">Send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1292.3237242725293!2d174.87618652448745!3d-36.9937481240786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4dc01fba3de5%3A0x5ff8de291c4fc145!2sMIT%20Manukau%20Campus!5e0!3m2!1sen!2snz!4v1636775993331!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col">
+                <img src="Images/logo.png" class="logo" alt="logo" />
+                <p>
+                    Our mission is to teach as many people as possible how to practise yoga and meditation.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>Auckland</p>
+                <p> Manukau Station Road</p>
+                <p>2104</p>
+                <p class="footer-email">info@body-mind.co.nz</p>
+                <p>+64 022 123 123</p>
+            </div>
+            <div class="footer-col">
+                <h3>Menu</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                        <li><a href="meditation.html">Meditation</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Subscribe to our Newsletter</h3>
+                <form class="footer-form">
+                    <input type="email" placeholder="Enter your email" id="email1" required />
+                    <button type="button" id="hide">Submit</button>
+                </form>
+
+                <p class="thanks">Thank you!</p>
+
+                <!--Icons connecting to main page of the social media, where business can creat their business
+                account and link directly to the website-->
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"> <img src="Images/Facebook.png" alt="Facebook icon" /></a>
+                    <a href="https://twitter.com/"><img src="Images/Twitter.png" alt="Twitter icon" /></a>
+                    <a href="https://www.instagram.com/?hl=en"> <img src="Images/Instagram.png" alt="Instagram icon" /></a>
+                    <a href="https://www.youtube.com/"><img src="Images/YouTube.png" alt="YouTube icon" /></a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <p class="copyr">502.525 Front-End Web Development Assignment project made by Tatiana Pasechnik. 2021</p>
+
+    </footer>
+    <!--Script to load menu opening and closing for small screen-->
+
+    <script src="JS/Menu.js"></script>
+
+    <!---Canvas javascript file-->
+    <script src="JS/Canvas.js"></script>
+    <script src="JS/Loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--style for fonts from google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!----Script for susbcription button-->
+    <script src="JS/subscription.js"></script>
+
+    <!---Script to load navigation menu-->
+    <script src="JS/JavaScript.js"></script>
+
+    <!---Script top load footer-->
+    <script src="JS/FooterReuse.js"></script>
+
+    <title>Body-Mind wellness center home page</title>
+</head>
+<body>
+
+    <!---turns preloader if page loading slowly-->
+    <div id="preloader"></div>
+
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="logo-header" src="Images/logo.png" alt="logo" /></a>
+
+            <div class="nav-links homePage" id="navMenu">
+                <img class="mini-menu" onclick="hideMenu()" src="Images/close.png" alt="close icon" />
+                <div id="menu"></div>
+
+            </div>
+            <img class="mini-menu" onclick="openMenu()" src="Images/menu.png" alt="open icon" />
+        </nav>
+        <div class="header-text">
+            <h1>Body-Mind Wellness center</h1>
+            <p>Where you can center your mind, strengthen your body, and nourish your soul. </p>
+            <a href="about.html" class="explore-btn">Learn how</a>
+        </div>
+    </section>
+
+
+    <section class="main-page">
+        <h1>Our services </h1>
+        <div class="row services">
+            <div class="home-col">
+                <img src="Images/pexels-photo-3822187.jpeg" alt="photo with person doig yoga" class="img1" />
+                <!--second page appears during screen size change-->
+                <img src="Images/pexels-photo-3822727.jpeg" alt="women excerissing yoga" class="img2" />
+            </div>
+            <div class="home-col">
+                <h3>Yoga</h3>
+                <p>
+                    Our Yoga classes include classes for <strong>beginners </strong> and classes where we practise <strong>Acro-Yoga</strong>. These classes are great for
+                    people who want to try new ways of practising yoga. All levels are welcome to join.
+                </p>
+
+
+                <a href="yoga.html" class="explore-btn yellow-btn">Read more</a>
+            </div>
+            <div class="home-col">
+                <img src="Images/pexels-photo-4327033.jpeg" alt=" photo with 2 people meditating" class="img1" />
+                <!--second page appears during screen size change-->
+                <img src="Images/pexels-photo-6454159.jpeg" alt="woman meditationg" class="img2" />
+            </div>
+            <div class="home-col">
+                <h3>Meditation</h3>
+                <p style="text-align:justify;">
+                    In our Meditation classes, you can learn practical ways to relax your brain and stay focused on your inner self.
+                    We focus on
+                    <b>mindfulness meditation</b> and <b>focused meditation</b>. Come and try yourself!
+                </p>
+
+                <a href="meditation.html" class="explore-btn yellow-btn">Read more</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="events-page">
+
+        <h1>Upcoming Events</h1>
+        <div class="row events">
+
+            <div class="events-col">
+                <h3> Outdoor Acro Yoga event</h3>
+                <h4>15 Devember 2021, 10:00 AM</h4>
+                <h6>Location:Piha Beach, Auckland</h6>
+                <img src="Images/pexels-photo-4127293.jpeg" alt="practice yoga" />
+                <p>
+                    It is beautiful weather outside, and we invite you to join our outdoor session at the beautiful western
+                    location- Piha beach. Meeting point by the Lion rock at 9:45 am. Look for our sigh.
+                </p>
+
+                <button class="explore-btn yellow-btn" id="firstB" onclick="displayDiv()">Register</button>
+
+                <!---subscription form-->
+                <div id="reg1" class="reg">
+
+                    <form>
+                        <label for="event_name">Event details:</label><br>
+                        <textarea rows="3" name="event_name" value="Outdoor Acro Yoga event." disabled>Outdoor Acro Yoga event
+15 December 2021, 10:00AM. 
+Piha Beach, Auckland.</textarea>
+
+                        <label for="f_email">Contact email:</label><br>
+                        <input type="email" id="f_email" name="f_email" placeholder="Enter your email" required><br>
+                        <label for="people">How many people:</label><br />
+                        <select id="people" name="people">
+                            <option value=1 selected>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                        </select><br />
+                        <button type="button" value="Submit" class="explore-btn yellow-btn" id="SubmitBtn" onclick="newF()">Submit</button>
+                        <button type="reset" value="Reset" class="explore-btn yellow-btn " onclick="hideDiv()">Reset</button>
+                    </form>
+
+
+                </div>
+                <div id="dbox" class="dialog-box">
+                    <div id="dboxm">Thank you</div>
+                    <input type="button" class="dbox-btn" value="OK" onclick="dbox()" />
+                </div>
+
+
+            </div>
+            <div class="events-col">
+                <h3> Meditation for beginners</h3>
+                <h4>05 Devember 2021, 11:00 AM</h4>
+                <h6> Location: Haymans Park, Outside MIT Manukau Building</h6>
+                <img src="Images/pexels-photo-4327033.jpeg" alt=" people meditating" />
+                <p>
+                    Every month we provide free of charge meditation sessions outside of our office building.
+                    Come and join us and explore what meditation is. Please find us near the skatepark.
+                </p>
+                <button class="explore-btn yellow-btn" id="firstB2" onclick="displayDiv2()">Register</button>
+
+                <div id="reg2" class="reg">
+
+                    <form>
+                        <label for="event_name">Event details:</label><br>
+                        <textarea rows="4" name="event_name" value="Meditation event." disabled>Meditation for beginners
+05 December 2021, 11:00AM. 
+Haymans park, Outside MIT Manukau Building.</textarea>
+
+                        <label for="f_email">Contact email:</label><br>
+                        <input type="email" id="f_email2" name="f_email" placeholder="Enter your email" required><br>
+                        <label for="people">How many people:</label><br />
+                        <select id="people" name="people">
+                            <option value=1 selected>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                        </select><br />
+                        <button type="button" value="Submit" class="explore-btn yellow-btn " id="SubmitBtn2" onclick="newF2()">Submit</button>
+                        <button type="reset" value="Reset" class="explore-btn yellow-btn" onclick="hideDiv2()">Reset</button>
+                    </form>
+
+
+                </div>
+            </div>
+            <div class="events-col">
+                <h3> Yoga at the Omana beach</h3>
+                <h4>03 Devember 2021, 10:00AM</h4>
+                <h6> Omana Beach, Auckland</h6>
+                <img src="Images/pexels-photo-3779750.jpeg" alt="woman excerisiing yoga" />
+                <p>
+                    If you live in South Auckland, it is an excellent opportunity to join our event, run at the Omana beach.
+                    With breathtaking view over the ocean. We are meeting at the Omana Beach Carpark.
+                </p>
+                <button class="explore-btn yellow-btn" id="firstB" onclick="displayDiv3()">Register</button>
+
+                <div id="reg3" class="reg">
+
+                    <form>
+                        <label for="event_name">Event details:</label><br>
+                        <textarea rows="3" name="event_name" value="Outdoor Acro Yoga event." disabled>Yoga at the beach.
+03 December 2021, 10:00AM. 
+Omana beach, Auckland.</textarea>
+
+                        <label for="f_email">Contact email:</label><br>
+                        <input type="email" id="f_email3" name="f_email" placeholder="Enter your email" required><br>
+                        <label for="people">How many people:</label><br />
+                        <select id="people" name="people">
+                            <option value=1 selected>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                        </select><br />
+                        <button type="button" value="Submit" class="explore-btn yellow-btn" id="SubmitBtn3" onclick="newF3()">Submit</button>
+                        <button type="reset" value="Reset" class="explore-btn yellow-btn" onclick="hideDiv3()">Reset</button>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---Footer-->
+    <main-footer></main-footer>
+
+
+
+    <!--Script to load menu opening and closing for small screen-->
+    <script src="JS/Menu.js"></script>
+
+    <!---script to display registration sucess via pop up window-->
+    <script src="JS/EventsRegistration.js"></script>
+
+    <!----JS for loader-->
+    <script src="JS/Loader.js"></script>
+
+
+
+</body>
+</html>

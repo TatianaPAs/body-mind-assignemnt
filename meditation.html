@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--style for fonts from google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <script src="JS/JavaScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="JS/subscription.js"></script>
+    <script src="JS/FooterReuse.js"></script>
+    <script src="JS/ReuseHeader.js"></script>
+    <link rel="stylesheet" href="CSS/StyleVideo.css" />
+    <title>Meditation page</title>
+</head>
+<body>
+
+    <div id="preloader"></div>
+
+    <main-header></main-header>
+
+    <section class="main-page">
+        <h1>How to start meditating</h1>
+        <div class="row meditation">
+            <div class="col-meditation">
+                <img src="Images/pexels-photo-6454159.jpeg" alt="a woman excerising yoga" />
+            </div>
+            <div class="col-meditation">
+                <h3> Meditation</h3>
+                <p>
+                    Meditation is rest for the mind. It helps people deal with daily stresses.
+                    People nowadays get too much pressure from media, their busy life stile, pandemic,
+                    and managing work-life balance brings stress. This type of lifestyle can lead to sleep deprivation and anxiety.
+                    By experiencing meditation regularly, people reduce their stress levels and feel happier.
+                </p>
+                <p>
+                    Starting meditation is simple –find a quiet place, sit and relax. Please close your eyes and focus on your breathing,
+                    inner sensations, and train your brain to stay focused on it. The more you practice, than easier it will be to focus on
+                    yourself.
+                </p>
+                <p>
+                    You will experience inner peacefulness, will feel relief and relaxation.
+                </p>
+                <p> In <strong>mindfulness meditation </strong>you pay attention to your thoughts as they pass through your mind.</p>
+
+            </div>
+
+            <div class="col-meditation">
+                <p>
+                    You don’t judge the thoughts
+                    or become involved with them. You observe and take note of any patterns
+                </p>
+                <p>
+                    <strong>Focused meditation</strong> involves concentration using any of the five senses.
+
+                    For example, you can focus on something internal, like your breath, or you can bring in external influences
+                    to help focus your attention.
+                </p>
+                <h3>Meditation and music.</h3>
+                <p>Maximize the benefits of meditation by listening to relaxing music at the same time.</p>
+                <p>
+                    Relaxing music for meditation makes you healthier and happier.
+                    It can invoce positive emotions and enchance quality of sleep.
+                </p>
+                <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2449001840/size=large/bgcol=333333/linkcol=e99708/tracklist=false/artwork=none/transparent=true/" seamless><a href="https://teramangalameditationmusic.bandcamp.com/album/deep-meditation-music-vol-8-royalty-free-commercial-use">Deep Meditation Music Vol​​​​​.​​​​​ 8 - Royalty​​​​​-​​​​​free - Commercial use by TERA MANGALA MEDITATION MUSIC</a></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-s">
+        <h1>Meditation excersise videos</h1>
+        <div class="container-video">
+
+            <div class="row video">
+                <div class="col-video">
+                    <div class="feature-img">
+                        <img src="Images/pexels-photo-8391376.jpeg" style="width:100%" />
+                        <img src="Images/play.png" class="play-btn" onclick="playVideo('Images/pexels-los-muertos-crew-8391363.mp4')" />
+                    </div>
+                </div>
+
+                <div class="col-video">
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="Images/pexels-photo-8964917.jpeg" />
+                            <img src="Images/play.png" class="play-btn" onclick="playVideo('Images/pexels-olia-danilevich-8959188.mp4')" />
+                        </div>
+                        <p>Sit back and relax, close your eyes and concentrate on your inner sensations.</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="Images/pexels-photo-4327033.jpeg" />
+                            <img src="Images/play.png" class="play-btn" onclick="playVideo('Images/production ID_4327192.mp4')" />
+                        </div>
+                        <p>You can meditate together with your partner.</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="Images/pexels-photo-5384530.jpeg" />
+                            <img src="Images/play.png" class="play-btn" onclick="playVideo('Images/pexels-gabby-k-5390478.mp4')" />
+                        </div>
+                        <p>We organise group meditation practises. Come and join next time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---video player-->
+
+    <div class="video-player" id="videoPlayer">
+        <video style="width:100%" controls autoplay id="myVideo">
+            <source src="Images/production ID_3760968.mp4" type="video/mp4" />
+        </video>
+        <img src="Images/closeB.png" class="close-btn" onclick="stopVideo()" />
+    </div>
+
+
+    <!---Footer-->
+    <main-footer></main-footer>
+
+
+    <!--connecting to Javascript file from the body, as it will not work from the head. Script to load menu opening and closing for small screen-->
+
+    <script src="JS/Menu.js"></script>
+
+    <script src="JS/Loader.js"></script>
+
+    <!---Script for video player-->
+    <script src="JS/PlayVideo.js"></script>
+
+</body>
+</html>

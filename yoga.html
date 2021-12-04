@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--style for fonts from google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="CSS/StyleVideo.css" />
+    <script src="JS/JavaScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="JS/subscription.js"></script>
+    <script src="JS/FooterReuse.js"></script>
+    <script src="JS/ReuseHeader.js"></script>
+
+    <title>Yoga page</title>
+</head>
+<body>
+
+    <div id="preloader"></div>
+
+    <main-header></main-header>
+
+    <section class="main-page">
+        <h1>Yoga: What You Need To Know</h1>
+        <p>Yoga is all about creating balance in your life. It is about balancing your senses.</p>
+    </section>
+    <section class="yoga-page">
+        <div class="row yoga">
+            <div class="col-yoga">
+                <h3> What is yoga and how does it work?</h3>
+                <p>
+                    Yoga is an ancient and complex practice, rooted in Indian philosophy. It began as a spiritual practice but has become
+                    popular as a way of promoting physical and mental well-being.
+                </p>
+                <p>
+                    Although classical yoga also includes other elements, yoga as practiced in the United States typically emphasizes
+                    physical postures (asanas), breathing techniques (pranayama), and meditation (dyana).
+                </p>
+                <p>
+                    There are many different yoga styles, ranging from gentle practices to physically demanding ones. Differences in the types
+                    of yoga used in research studies may affect study results. This makes it challenging to evaluate research on the health effects of yoga.
+                </p>
+                <p>
+                    Yoga and two practices of Chinese origin—tai chi and qi gong—are sometimes called “meditative movement” practices.
+                    All three practices include both meditative elements and physical ones.
+                </p>
+            </div>
+
+            <div class="col-yoga">
+                <img src="Images/yoga2.png" alt="a woman excerising yoga" />
+            </div>
+            <div class="col-yoga">
+                <h3> Benefits of Acro Yoga </h3>
+
+                <p>Acro Yoga is a great tool for spinal decompression. It lengthens your spine and also helps in strengthening the back muscles.</p>
+                <p>Since this is an intense form of yoga, your cardiovascular system is positively affected.</p>
+                <p>You will gain flexibility, a stronger core, muscles, and joints.</p>
+                <p>
+                    When you perform Acro Yoga with the same person, your relationship with them improves. And with an improved relationship comes understanding.
+                    You will easily be able to decipher body signs and achieve a higher sense of professionalism.
+                </p>
+                <p>It helps in improving your concentration as both the base and the flyer are focused on each other’s safety by being present in the moment.</p>
+                <p>You will learn to completely surrender yourself as you learn to give and take in equal proportions.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="video-s">
+        <h1>Video lessons for beginners</h1>
+
+        <div class="container-video">
+
+            <div class="row video">
+                <div class="col-video">
+                    <div class="feature-img">
+                        <img src="Images/pexels-photo-2294353.jpeg" style="width:100%" />
+                        <img src="Images/play.png" class="play-btn" onclick="playVideo('Images/production ID_3760968.mp4')" />
+                    </div>
+                </div>
+
+                <div class="col-video">
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="Images/pexels-photo-3822304.jpeg" />
+                            <img src="Images/play.png" class="play-btn"
+                                 onclick="playVideo('Images/pexels-los-muertos-crew-8895497.mp4')" />
+                        </div>
+                        <p>Follow this tuttorial to learn some basic Acro-Yoga positions.</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="Images/pexels-photo-4127304.jpeg" />
+                            <img src="Images/play.png" class="play-btn"
+                                 onclick="playVideo('Images/production ID_4265359.mp4')" />
+                        </div>
+                        <p>Basic stretching for 2 people</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="Images/pexels-photo-8964917.jpeg" />
+                            <img src="Images/play.png" class="play-btn"
+                                 onclick="playVideo('Images/pexels-olia-danilevich-9003264.mp4')" />
+                        </div>
+                        <p>Excersises at the beach.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----video player-->
+
+    <div class="video-player" id="videoPlayer">
+        <video style="width:100%" controls autoplay id="myVideo">
+            <source src="Images/production ID_3760968.mp4" type="video/mp4" />
+        </video>
+        <img src="Images/closeB.png" class="close-btn" onclick="stopVideo()" />
+    </div>
+
+
+    <!---Footer-->
+    <main-footer></main-footer>
+
+        <!--connecting to Javascript file from the body, as it will not work from the head. Script to load menu opening and closing for small screen-->
+
+    <script src="JS/Menu.js"></script>
+
+    <script src="JS/Loader.js"></script>
+
+    <!---Script for video player-->
+    <script src="JS/PlayVideo.js"></script>
+
+</body>
+</html>
